@@ -251,7 +251,7 @@ GameObject:
   m_Component:
   - component: {fileID: 846402985}
   - component: {fileID: 846402986}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: PlayerProjectileSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -265,7 +265,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 846402984}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -563,6 +563,7 @@ GameObject:
   - component: {fileID: 1728913361}
   - component: {fileID: 1728913360}
   - component: {fileID: 1728913365}
+  - component: {fileID: 1728913366}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -641,7 +642,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1728913359}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 0
@@ -702,6 +703,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1728913366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1728913359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14a7ecf1478c1bb46b05c1add76b708a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 1728913365}
+  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  outlineOffset: 0.02
+  outlineThickness: 0.02
 --- !u!1 &1910327383
 GameObject:
   m_ObjectHideFlags: 0
