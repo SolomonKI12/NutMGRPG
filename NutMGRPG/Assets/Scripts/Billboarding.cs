@@ -10,7 +10,7 @@ public class Billboarding : MonoBehaviour
     public int bottomHalfSortingOrder = 2;
     public int topHalfSortingOrder = 0;
 
-    private void LateUpdate()
+    private void Update()
     {
         // Apply the rotation of the camera to the object's sprite
         transform.rotation = cameraTransform.rotation;

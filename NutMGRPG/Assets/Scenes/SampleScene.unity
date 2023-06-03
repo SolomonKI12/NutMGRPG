@@ -299,6 +299,7 @@ GameObject:
   - component: {fileID: 1267606832}
   - component: {fileID: 1267606835}
   - component: {fileID: 1267606836}
+  - component: {fileID: 1267606837}
   m_Layer: 0
   m_Name: GreyRock
   m_TagString: Untagged
@@ -406,6 +407,22 @@ MonoBehaviour:
   spriteRenderer: {fileID: 1267606832}
   bottomHalfSortingOrder: 2
   topHalfSortingOrder: 0
+--- !u!114 &1267606837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1267606831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14a7ecf1478c1bb46b05c1add76b708a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 1267606832}
+  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  outlineOffset: 0.03
+  outlineThickness: 0.03
 --- !u!1 &1359571340
 GameObject:
   m_ObjectHideFlags: 0
@@ -419,6 +436,7 @@ GameObject:
   - component: {fileID: 1359571342}
   - component: {fileID: 1359571341}
   - component: {fileID: 1359571345}
+  - component: {fileID: 1359571346}
   m_Layer: 0
   m_Name: LightBlueGoblin
   m_TagString: Enemy
@@ -549,7 +567,23 @@ MonoBehaviour:
   cameraTransform: {fileID: 519420032}
   spriteRenderer: {fileID: 1359571343}
   bottomHalfSortingOrder: 2
-  topHalfSortingOrder: 0
+  topHalfSortingOrder: -2
+--- !u!114 &1359571346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359571340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14a7ecf1478c1bb46b05c1add76b708a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 1359571343}
+  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  outlineOffset: 0.03
+  outlineThickness: 0.03
 --- !u!1 &1728913359
 GameObject:
   m_ObjectHideFlags: 0
@@ -717,8 +751,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 1728913365}
   outlineColor: {r: 0, g: 0, b: 0, a: 1}
-  outlineOffset: 0.02
-  outlineThickness: 0.02
+  outlineOffset: 0.03
+  outlineThickness: 0.03
 --- !u!1 &1910327383
 GameObject:
   m_ObjectHideFlags: 0

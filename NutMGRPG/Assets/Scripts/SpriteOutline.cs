@@ -25,10 +25,6 @@ public class SpriteOutline : MonoBehaviour
 
             outlineRenderers[i] = outlineObject.AddComponent<SpriteRenderer>();
 
-            // Set the outline's sorting layer and order
-            outlineRenderers[i].sortingLayerName = spriteRenderer.sortingLayerName;
-            outlineRenderers[i].sortingOrder = spriteRenderer.sortingOrder - 1;
-
             // Set the outline's sprite to be the same as the main sprite
             outlineRenderers[i].sprite = spriteRenderer.sprite;
 
@@ -47,5 +43,15 @@ public class SpriteOutline : MonoBehaviour
         outlineRenderers[1].transform.position = spritePosition + Vector3.down * outlineOffset;
         outlineRenderers[2].transform.position = spritePosition + Vector3.left * outlineOffset;
         outlineRenderers[3].transform.position = spritePosition + Vector3.right * outlineOffset;
+    }
+
+    void LateUpdate()
+    {
+        // Update the sorting layer and order of the outline sprites in LateUpdate
+        foreach (SpriteRenderer outlineRenderer in outlineRenderers)
+        {
+            outlineRenderer.sortingLayerName = spriteRenderer.sortingLayerName;
+            outlineRenderer.sortingOrder = spriteRenderer.sortingOrder - 1;
+        }
     }
 }
