@@ -8,7 +8,7 @@ public class Billboarding : MonoBehaviour
     public Transform cameraTransform;
     public SpriteRenderer spriteRenderer;
     public int bottomHalfSortingOrder = 2;
-    public int topHalfSortingOrder = 0;
+    public int topHalfSortingOrder = -2;
 
     private void Update()
     {

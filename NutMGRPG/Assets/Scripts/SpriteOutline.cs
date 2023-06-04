@@ -6,8 +6,8 @@ public class SpriteOutline : MonoBehaviour
 {
     public SpriteRenderer spriteRenderer;  // Reference to the SpriteRenderer component
     public Color outlineColor = Color.black;  // Color of the outline
-    public float outlineOffset = 0.1f;  // Offset of the outline
-    public float outlineThickness = 0.1f;  // Thickness of the outline
+    public float outlineOffset = 0.03f;  // Offset of the outline
+    public float outlineThickness = 0.03f;  // Thickness of the outline
 
     private SpriteRenderer[] outlineRenderers;  // Array to hold the outline SpriteRenderer components
 

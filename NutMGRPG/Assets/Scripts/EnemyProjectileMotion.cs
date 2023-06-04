@@ -23,6 +23,10 @@ public class EnemyProjectileMotion : MonoBehaviour
         // Calculate the direction based on the difference between the projectile's position and the player's position
         Vector3 direction = (player.transform.position - transform.position).normalized;
 
+        // Rotate the projectile to point towards the player
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+
         // Apply the velocity to the projectile with a constant speed
         Rigidbody2D projectileRb = GetComponent<Rigidbody2D>();
         projectileRb.velocity = direction * speed;
