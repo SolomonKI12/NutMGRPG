@@ -43,6 +43,13 @@ public class SpriteOutline : MonoBehaviour
         outlineRenderers[1].transform.position = spritePosition + Vector3.down * outlineOffset;
         outlineRenderers[2].transform.position = spritePosition + Vector3.left * outlineOffset;
         outlineRenderers[3].transform.position = spritePosition + Vector3.right * outlineOffset;
+
+        // Rotate the outline to match the sprite's rotation
+        Quaternion spriteRotation = spriteRenderer.transform.rotation;
+        foreach (SpriteRenderer outlineRenderer in outlineRenderers)
+        {
+            outlineRenderer.transform.rotation = spriteRotation;
+        }
     }
 
     void LateUpdate()

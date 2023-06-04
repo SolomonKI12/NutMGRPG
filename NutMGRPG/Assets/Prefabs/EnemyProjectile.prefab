@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5280550418085905894}
   - component: {fileID: 5280550418085905893}
   - component: {fileID: 5280550418085905892}
+  - component: {fileID: 8365717396876476392}
   m_Layer: 6
   m_Name: EnemyProjectile
   m_TagString: Projectile
@@ -81,7 +82,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.08, y: 0.08}
+  m_Size: {x: 0.12, y: 0.12}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -139,3 +140,19 @@ MonoBehaviour:
   speed: 15
   maxDistance: 30
   damage: 5
+--- !u!114 &8365717396876476392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5280550418085905891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14a7ecf1478c1bb46b05c1add76b708a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 5280550418085905895}
+  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  outlineOffset: 0.08
+  outlineThickness: 0.08

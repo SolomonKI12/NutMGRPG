@@ -7,7 +7,7 @@ public class SimpleProjectileMotion : MonoBehaviour
     public float speed = 5f; // The constant speed at which the projectile moves
     public float maxDistance = 10f; // The maximum distance the projectile can travel from its spawn position
 
-    public int damage = 5; //damage dealt to enemies by projectile
+    public int damage = 5; // Damage dealt to enemies by projectile
 
     private Vector3 spawnPosition; // The position where the projectile was spawned
     private float distanceTraveled; // The distance the projectile has traveled
@@ -17,12 +17,16 @@ public class SimpleProjectileMotion : MonoBehaviour
         spawnPosition = transform.position;
         distanceTraveled = 0f;
 
-        // Get the initial position of the player's cursor
+        // Get the initial position of the cursor in world space
         Vector3 targetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         targetPosition.z = transform.position.z; // Maintain the same z position as the projectile
 
         // Calculate the direction based on the difference between the projectile's position and the target position
         Vector3 direction = (targetPosition - transform.position).normalized;
+
+        // Rotate the projectile to point towards the cursor
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
         // Apply the velocity to the projectile with a constant speed
         Rigidbody2D projectileRb = GetComponent<Rigidbody2D>();
