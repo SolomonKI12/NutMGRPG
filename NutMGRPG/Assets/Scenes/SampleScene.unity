@@ -422,7 +422,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.078}
   serializedVersion: 2
-  m_Radius: 0.045
+  m_Radius: 0.05
 --- !u!1 &1359571340
 GameObject:
   m_ObjectHideFlags: 0
@@ -437,6 +437,7 @@ GameObject:
   - component: {fileID: 1359571341}
   - component: {fileID: 1359571345}
   - component: {fileID: 1359571346}
+  - component: {fileID: 1359571347}
   m_Layer: 0
   m_Name: LightBlueGoblin
   m_TagString: Enemy
@@ -457,6 +458,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  movementSpeed: 20
+  detectionDistance: 30
+  stopDistance: 2
 --- !u!61 &1359571342
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -584,6 +588,27 @@ MonoBehaviour:
   outlineColor: {r: 0, g: 0, b: 0, a: 1}
   outlineOffset: 0.08
   outlineThickness: 0.08
+--- !u!50 &1359571347
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359571340}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1000000
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
 --- !u!1 &1728913359
 GameObject:
   m_ObjectHideFlags: 0
@@ -600,6 +625,7 @@ GameObject:
   - component: {fileID: 1728913367}
   - component: {fileID: 1728913368}
   - component: {fileID: 1728913369}
+  - component: {fileID: 1728913370}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -728,7 +754,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 22b4ffe2bc1caa642b7912453d1bca50, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 68d750c5f5c73bd4e9f005185ffb8a4d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -789,6 +815,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 1728913367}
+--- !u!114 &1728913370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1728913359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6246a0ab373c46243ad578b89a2fba3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 0
 --- !u!1 &1910327383
 GameObject:
   m_ObjectHideFlags: 0
@@ -835,3 +875,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 5280550418085905891, guid: 707a4c559d3360f47a828ee84f192a1c, type: 3}
   spawnRate: 0.5
+  spawnDistanceThreshold: 20

@@ -137,9 +137,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 069d7caeaee8acb4f9e53547b1749d43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 15
+  speed: 35
   maxDistance: 30
-  damage: 5
+  damage: 30
 --- !u!114 &8365717396876476392
 MonoBehaviour:
   m_ObjectHideFlags: 0
