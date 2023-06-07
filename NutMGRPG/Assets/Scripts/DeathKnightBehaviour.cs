@@ -7,9 +7,13 @@ public class DeathKnightBehaviour : MonoBehaviour
     public int maxHealth = 100; // Maximum health of the player
     public int currentHealth; // Current health of the player
 
+    public HealthBar healthBar;
+    public GameObject tombstonePrefab; // Tombstone prefab to instantiate upon death
+
     private void Start()
     {
         currentHealth = maxHealth; // Initialize current health to maximum health
+        healthBar.SetMaxHealth(maxHealth);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -26,6 +30,8 @@ public class DeathKnightBehaviour : MonoBehaviour
     {
         currentHealth -= damageAmount;
 
+        healthBar.SetHealth(currentHealth);
+
         if (currentHealth <= 0)
         {
             Die(); // Player has run out of health
@@ -34,8 +40,13 @@ public class DeathKnightBehaviour : MonoBehaviour
 
     private void Die()
     {
-        // Implement your own logic for player death
+        // Instantiate tombstone prefab
+        GameObject tombstone = Instantiate(tombstonePrefab, transform.position, Quaternion.identity);
+
+        // Destroy player game object
+        Destroy(gameObject);
+
+        // Implement any additional logic after player death
         // For example, you might display a game over screen, restart the level, etc.
-        Debug.Log("Player died");
     }
 }

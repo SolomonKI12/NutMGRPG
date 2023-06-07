@@ -4,19 +4,34 @@ using UnityEngine;
 
 public class Billboarding : MonoBehaviour
 {
-    public Camera mainCamera;
-    public Transform cameraTransform;
+    private Transform cameraTransform;
     public SpriteRenderer spriteRenderer;
     public int bottomHalfSortingOrder = 2;
     public int topHalfSortingOrder = -2;
 
+    private void Start()
+    {
+        // Get the main camera transform automatically
+        Camera mainCamera = Camera.main;
+        if (mainCamera == null)
+        {
+            Debug.LogWarning("Main camera not found.");
+            return;
+        }
+
+        cameraTransform = mainCamera.transform;
+    }
+
     private void Update()
     {
+        if (cameraTransform == null)
+            return;
+
         // Apply the rotation of the camera to the object's sprite
         transform.rotation = cameraTransform.rotation;
 
         // Get the position of the sprite relative to the camera viewport
-        Vector3 viewportPosition = mainCamera.WorldToViewportPoint(transform.position);
+        Vector3 viewportPosition = Camera.main.WorldToViewportPoint(transform.position);
 
         // Check if the sprite's y position is in the bottom half of the screen
         if (viewportPosition.y <= 0.5f)
