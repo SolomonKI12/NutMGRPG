@@ -43,8 +43,7 @@ public class DeathKnightBehaviour : MonoBehaviour
         // Instantiate tombstone prefab
         GameObject tombstone = Instantiate(tombstonePrefab, transform.position, Quaternion.identity);
 
-        // Destroy player game object
-        Destroy(gameObject);
+       
 
         // Implement any additional logic after player death
         // For example, you might display a game over screen, restart the level, etc.
