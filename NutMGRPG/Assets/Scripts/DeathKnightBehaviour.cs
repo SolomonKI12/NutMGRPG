@@ -9,6 +9,7 @@ public class DeathKnightBehaviour : MonoBehaviour
 
     public HealthBar healthBar;
     public GameObject tombstonePrefab; // Tombstone prefab to instantiate upon death
+    public Sprite ghostSprite; // Ghost sprite to change the player sprite to upon death
 
     private void Start()
     {
@@ -43,8 +44,14 @@ public class DeathKnightBehaviour : MonoBehaviour
         // Instantiate tombstone prefab
         GameObject tombstone = Instantiate(tombstonePrefab, transform.position, Quaternion.identity);
 
-        // Destroy player game object
-        Destroy(gameObject);
+        // Get the SpriteRenderer component of the player
+        SpriteRenderer playerSpriteRenderer = GetComponent<SpriteRenderer>();
+
+        if (playerSpriteRenderer != null)
+        {
+            // Change the player sprite to the ghost sprite
+            playerSpriteRenderer.sprite = ghostSprite;
+        }
 
         // Implement any additional logic after player death
         // For example, you might display a game over screen, restart the level, etc.
