@@ -23325,7 +23325,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 1728913367}
-  deathKnightBehaviour: {fileID: 0}
 --- !u!114 &1728913370
 MonoBehaviour:
   m_ObjectHideFlags: 0
