@@ -139,7 +139,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 35
   maxDistance: 30
-  damage: 30
+  damage: 10
 --- !u!114 &8365717396876476392
 MonoBehaviour:
   m_ObjectHideFlags: 0
