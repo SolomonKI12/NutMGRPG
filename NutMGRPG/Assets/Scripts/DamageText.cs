@@ -1,18 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class DamageText : MonoBehaviour
 {
     public float moveSpeed = 2f; // Speed at which the damage text moves up
     public float destroyDelay = 1f; // Delay before destroying the damage text
 
-    private TextMesh textMesh;
+    private TextMeshProUGUI textMesh;
     private Transform cameraTransform;
 
     private void Awake()
     {
-        textMesh = GetComponent<TextMesh>();
+        textMesh = GetComponent<TextMeshProUGUI>();
         cameraTransform = Camera.main.transform;
     }
 
