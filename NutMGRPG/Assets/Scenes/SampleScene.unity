@@ -10600,8 +10600,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
@@ -12597,8 +12597,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
@@ -24651,6 +24651,7 @@ MonoBehaviour:
   currentHealth: 0
   healthBar: {fileID: 32606073}
   tombstonePrefab: {fileID: 3759997112015771484, guid: c7aa2b2f9daeeb640ac0ee3ee52eaef6, type: 3}
+  damageTextPrefab: {fileID: 6454422943940024720, guid: 02c0517445348794e9dd8f06332500e6, type: 3}
 --- !u!1 &1733712161
 GameObject:
   m_ObjectHideFlags: 0

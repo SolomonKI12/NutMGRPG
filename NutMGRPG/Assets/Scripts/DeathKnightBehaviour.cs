@@ -9,6 +9,7 @@ public class DeathKnightBehaviour : MonoBehaviour
 
     public HealthBar healthBar;
     public GameObject tombstonePrefab; // Tombstone prefab to instantiate upon death
+    public GameObject damageTextPrefab; // Damage text prefab to instantiate when taking damage
 
     private void Start()
     {
@@ -23,6 +24,10 @@ public class DeathKnightBehaviour : MonoBehaviour
             int damageAmount = collision.gameObject.GetComponent<EnemyProjectileMotion>().damage;
 
             TakeDamage(damageAmount); // Deduct health based on the projectile's damage
+
+            // Instantiate damage text at the Death Knight's position
+            Instantiate(damageTextPrefab, transform.position, Quaternion.identity)
+                .GetComponent<DamageText>().SetText(damageAmount.ToString());
         }
     }
 
