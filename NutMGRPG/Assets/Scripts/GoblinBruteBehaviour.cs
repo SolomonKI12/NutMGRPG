@@ -32,7 +32,11 @@ public class GoblinBruteBehaviour : MonoBehaviour
 
     private void Update()
     {
-        if (IsPlayerWithinDetectionDistance())
+        if (playerTransform == null)
+        {
+            StopMoving();
+        }
+        else if (IsPlayerWithinDetectionDistance())
         {
             MoveTowardsPlayer();
         }

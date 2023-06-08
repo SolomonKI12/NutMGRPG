@@ -20,8 +20,12 @@ public class LightBlueGoblinBehaviour : MonoBehaviour
 
     private void Update()
     {
+        if (playerTransform == null)
+        {
+            StopMoving();
+        }
         // Check if the player is within the detection distance
-        if (IsPlayerWithinDetectionDistance())
+        else if (IsPlayerWithinDetectionDistance())
         {
             MoveTowardsPlayer();
         }
@@ -34,6 +38,7 @@ public class LightBlueGoblinBehaviour : MonoBehaviour
     private bool IsPlayerWithinDetectionDistance()
     {
         // Calculate the distance between the goblin and the player
+
         float distance = Vector3.Distance(transform.position, playerTransform.position);
 
         // Return true if the player is within the detection distance
