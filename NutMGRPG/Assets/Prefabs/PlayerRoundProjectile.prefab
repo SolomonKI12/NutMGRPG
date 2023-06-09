@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 4665669567483916901}
   - component: {fileID: 4473676675517305019}
   - component: {fileID: 7406216373603242343}
-  - component: {fileID: 6720054524288291815}
   - component: {fileID: 2633499622385431199}
+  - component: {fileID: 1319780611212312090}
   m_Layer: 3
   m_Name: PlayerRoundProjectile
   m_TagString: Projectile
@@ -125,21 +125,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.04
---- !u!114 &6720054524288291815
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4665669567483916898}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d79537da88ac10749ac7ba9f99a33fac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 45
-  maxDistance: 18
-  damage: 5
 --- !u!114 &2633499622385431199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,3 +141,18 @@ MonoBehaviour:
   outlineColor: {r: 0, g: 0, b: 0, a: 1}
   outlineOffset: 0.08
   outlineThickness: 0.08
+--- !u!114 &1319780611212312090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4665669567483916898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d79537da88ac10749ac7ba9f99a33fac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  maxDistance: 10
+  damage: 5

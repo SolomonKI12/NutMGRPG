@@ -21,10 +21,10 @@ public class SimpleProjectileMotion : MonoBehaviour
         Vector3 targetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         targetPosition.z = transform.position.z; // Maintain the same z position as the projectile
 
-        // Calculate the direction based on the difference between the projectile's position and the target position
-        Vector3 direction = (targetPosition - transform.position).normalized;
+        // Calculate the direction perpendicular to the mouse cursor
+        Vector3 direction = new Vector3(-targetPosition.y, targetPosition.x, 0f).normalized;
 
-        // Rotate the projectile to point towards the cursor
+        // Rotate the projectile to point towards the perpendicular direction
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
