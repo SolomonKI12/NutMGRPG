@@ -11,8 +11,11 @@ public class PlayerController : MonoBehaviour
     public string layerA = "Player"; // Name of the first layer
     public string layerB = "Enemy"; // Name of the second layer
 
+    public float teleportCooldown = 1f; // Cooldown time before the player can teleport again
+
     private Rigidbody2D rb;
     private Quaternion initialRotation;
+    private float lastTeleportTime; // Timestamp of the last teleport
 
     private void Start()
     {
@@ -56,6 +59,16 @@ public class PlayerController : MonoBehaviour
 
         // Rotate the player sprite to match the camera's rotation
         transform.rotation = cameraTransform.rotation * Quaternion.Inverse(initialRotation);
+
+        // Teleport the player to the cursor position while right mouse button is held down and cooldown has passed
+        if (Input.GetMouseButton(1) && Time.time - lastTeleportTime >= teleportCooldown)
+        {
+            Vector3 targetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            targetPosition.z = transform.position.z;
+            transform.position = targetPosition;
+
+            lastTeleportTime = Time.time; // Update the timestamp of the last teleport
+        }
     }
 
     private void LateUpdate()

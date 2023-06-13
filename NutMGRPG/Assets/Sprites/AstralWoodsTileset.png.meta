@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8a25c98407badbf499271b18eec36b98
+guid: 58d0ba9483e72e349890542ce3d7747e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BeachTileset_0
+      name: AstralWoodsTileset_0
       rect:
         serializedVersion: 2
         x: 0
@@ -131,14 +131,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee293c11ceffe0d4a94addc13d1993c4
-      internalID: 487621851
+      spriteID: 1c60be97646c430408a0190b8605a03b
+      internalID: 1383302059
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BeachTileset_1
+      name: AstralWoodsTileset_1
       rect:
         serializedVersion: 2
         x: 32
@@ -152,14 +152,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b6bdf004ce0f6d04ca1c8d851d97678b
-      internalID: 1728258014
+      spriteID: fa5c9fed0504958489d352308b887bd5
+      internalID: -1515200645
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BeachTileset_2
+      name: AstralWoodsTileset_2
       rect:
         serializedVersion: 2
         x: 64
@@ -173,14 +173,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d08dbec5ab9888b45ad6108e5f16fe69
-      internalID: -513616417
+      spriteID: 5cb65deb78169834da8540b52caf2522
+      internalID: -605262651
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BeachTileset_3
+      name: AstralWoodsTileset_3
       rect:
         serializedVersion: 2
         x: 96
@@ -194,14 +194,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a18ec6fb627354b4cb59d9f457896fa0
-      internalID: 1351401229
+      spriteID: 497f05bccd3022944acaa0b05b4120b2
+      internalID: -1818216295
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BeachTileset_4
+      name: AstralWoodsTileset_4
       rect:
         serializedVersion: 2
         x: 128
@@ -215,14 +215,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb2b815023dad4045b61700de6878582
-      internalID: 2001811
+      spriteID: f7afe5e37c307b744912873b2e8af6ae
+      internalID: 238420626
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BeachTileset_5
+      name: AstralWoodsTileset_5
       rect:
         serializedVersion: 2
         x: 160
@@ -236,14 +236,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ba83c420e3211c4e8b8a33412c9b752
-      internalID: -1518426612
+      spriteID: 439d06d8daecb304d917d623a67f0acf
+      internalID: -1100616414
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BeachTileset_6
+      name: AstralWoodsTileset_6
       rect:
         serializedVersion: 2
         x: 0
@@ -257,14 +257,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2b20912550ab9241871adc74bb557fe
-      internalID: -6229926
+      spriteID: 0142716d93f09354d8d29f8fc233e211
+      internalID: 1855501524
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BeachTileset_7
+      name: AstralWoodsTileset_7
       rect:
         serializedVersion: 2
         x: 32
@@ -278,14 +278,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b60f1a7ac0a441449d3248ace1d866b
-      internalID: -645633598
+      spriteID: 34802157bf2779c44b322e482f9a9bae
+      internalID: 266903562
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BeachTileset_8
+      name: AstralWoodsTileset_8
       rect:
         serializedVersion: 2
         x: 64
@@ -299,14 +299,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c94fbe579463f424587a15eef450c865
-      internalID: 232377691
+      spriteID: 78d3d493f434131458c7c5b68ac55ac3
+      internalID: -1800688475
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BeachTileset_9
+      name: AstralWoodsTileset_9
       rect:
         serializedVersion: 2
         x: 96
@@ -320,14 +320,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 24f0c155cfdb6d8449510ddc0620cf39
-      internalID: 112939474
+      spriteID: fe7c34c6919244f4ebd6078a98946c95
+      internalID: 1972488405
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BeachTileset_10
+      name: AstralWoodsTileset_10
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6da56ad49f70fbc4eba47031b6dd99ff
+      internalID: 1221769450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AstralWoodsTileset_11
       rect:
         serializedVersion: 2
         x: 160
@@ -341,14 +362,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17976ba5519bf6b4d9861b95f3d8d433
-      internalID: 1279313710
+      spriteID: a19657e93ee0cb9469a5acd337e16fb6
+      internalID: 1153637660
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BeachTileset_11
+      name: AstralWoodsTileset_12
       rect:
         serializedVersion: 2
         x: 0
@@ -362,14 +383,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d614c19cb6f82a4d8fa5a5002386c54
-      internalID: 695749425
+      spriteID: 4f584c75ac28a6d4aa1e78e3fa0e9b98
+      internalID: 1971345379
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BeachTileset_12
+      name: AstralWoodsTileset_13
       rect:
         serializedVersion: 2
         x: 32
@@ -383,14 +404,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 15a6dae79b069b147ac911a1ac2fa16d
-      internalID: -1790066019
+      spriteID: f85e4630bbcae5b42acb77cdc07c7265
+      internalID: 674717566
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BeachTileset_13
+      name: AstralWoodsTileset_14
       rect:
         serializedVersion: 2
         x: 64
@@ -404,14 +425,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 240232d00d385194fab9d8b8671c0cb9
-      internalID: 120121663
+      spriteID: 5ce9a551b00f5f94e8e1d865d43e9971
+      internalID: 2135564113
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BeachTileset_14
+      name: AstralWoodsTileset_15
       rect:
         serializedVersion: 2
         x: 96
@@ -425,14 +446,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e715808d0a87704ea8cf3d9a0ad94d2
-      internalID: -1472265260
+      spriteID: 7149dc213d1d2344bb34d9f7902bd597
+      internalID: 89229774
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BeachTileset_15
+      name: AstralWoodsTileset_16
       rect:
         serializedVersion: 2
         x: 128
@@ -446,14 +467,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b4aee582c3406cb49bcefdb58d32a4e5
-      internalID: -1772698930
+      spriteID: 654d8c9fa9de8c04e8a3405d7acec90e
+      internalID: -1025290603
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BeachTileset_16
+      name: AstralWoodsTileset_17
       rect:
         serializedVersion: 2
         x: 160
@@ -467,8 +488,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab53d17e188cd004080c5e8863c9ecab
-      internalID: 155632605
+      spriteID: 05cd2960bb593f544aceddfc64ee255b
+      internalID: -1015733303
       vertices: []
       indices: 
       edges: []
@@ -484,23 +505,24 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      BeachTileset_0: 487621851
-      BeachTileset_1: 1728258014
-      BeachTileset_10: 1279313710
-      BeachTileset_11: 695749425
-      BeachTileset_12: -1790066019
-      BeachTileset_13: 120121663
-      BeachTileset_14: -1472265260
-      BeachTileset_15: -1772698930
-      BeachTileset_16: 155632605
-      BeachTileset_2: -513616417
-      BeachTileset_3: 1351401229
-      BeachTileset_4: 2001811
-      BeachTileset_5: -1518426612
-      BeachTileset_6: -6229926
-      BeachTileset_7: -645633598
-      BeachTileset_8: 232377691
-      BeachTileset_9: 112939474
+      AstralWoodsTileset_0: 1383302059
+      AstralWoodsTileset_1: -1515200645
+      AstralWoodsTileset_10: 1221769450
+      AstralWoodsTileset_11: 1153637660
+      AstralWoodsTileset_12: 1971345379
+      AstralWoodsTileset_13: 674717566
+      AstralWoodsTileset_14: 2135564113
+      AstralWoodsTileset_15: 89229774
+      AstralWoodsTileset_16: -1025290603
+      AstralWoodsTileset_17: -1015733303
+      AstralWoodsTileset_2: -605262651
+      AstralWoodsTileset_3: -1818216295
+      AstralWoodsTileset_4: 238420626
+      AstralWoodsTileset_5: -1100616414
+      AstralWoodsTileset_6: 1855501524
+      AstralWoodsTileset_7: 266903562
+      AstralWoodsTileset_8: -1800688475
+      AstralWoodsTileset_9: 1972488405
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
